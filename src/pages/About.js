@@ -128,7 +128,7 @@ const About = () => {
 
         <Info>
             <Title>OUR SERVICES</Title>
-            <Desc><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptates!</span> <span style={{height:'3px', width:"20%",background:"#ffc107"}} ></span> </Desc>
+            <Desc><span>Lorem ipsum dolor  consectetur adipisicing elit. Nemo, voluptates!</span> <span style={{height:'3px', width:"20%",background:"#ffc107"}} ></span> </Desc>
         </Info>
           <CertifContainer  >
             <Swipe/>
