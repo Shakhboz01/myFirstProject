@@ -1,8 +1,6 @@
 import React,{useRef,useEffect} from 'react'
 import styled, { keyframes } from 'styled-components'
 import logo from "../photos/Лого.png";
-import {BsArrowRight} from "react-icons/bs"
-import {BsArrowLeft} from "react-icons/bs"
 import 'animate.css';
 import { useState } from 'react';
 import {Slides} from "../Data/data";

@@ -1,7 +1,6 @@
 import React,{useEffect} from 'react'
 import  styled from "styled-components";
 import Header from '../components/Header';
-import axios from "axios";
 import { useState } from 'react';
 import Service from '../components/Service';
 import Categories from '../components/Categories';
