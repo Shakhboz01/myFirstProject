@@ -120,7 +120,7 @@ const Categories = () => {
   return (
     <Container>
       <Info>
-          <Title>plo Categories</Title>
+          <Title>plod Categories</Title>
           <Desc><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptates!</span> <span style={{height:'3px', width:"20%",background:"#ffc107"}} ></span></Desc>
       </Info>
 
