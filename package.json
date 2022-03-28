@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Shakhboz01.github.io/jbp",
+  "homepage": "http://Shakhboz01.github.io/business2",
   "name": "jbp",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +13,7 @@
     "aos": "^2.3.4",
     "axios": "^0.26.1",
     "framer-motion": "^6.2.8",
+    "gh-pages": "^3.2.3",
     "i": "^0.3.7",
     "npm": "^8.5.5",
     "react": "^17.0.2",
