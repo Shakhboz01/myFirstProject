@@ -15,15 +15,7 @@ export const LinkContext=React.createContext();
 
 const App=()=> {
 
-  let path='about';
-  const [changeLinkColor,setChangeLinkColor]=useState('')
-
-  useEffect(()=>{
-    path= window.location.pathname.split("/")[1];
-    setChangeLinkColor(path);
-console.log( 'pathname changed to ', window.location.pathname.split('/')[1] )
-  },[window.location.pathname])
-
+  
 
   return (
     <>
