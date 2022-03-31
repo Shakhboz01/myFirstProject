@@ -70,7 +70,7 @@ const CertifContainer=styled.div`
 display:flex;
 justify-content:center;
 
-margin-top:160px;
+margin:160px 0;
 `
 const Benefits=styled.div`
 `
@@ -134,13 +134,7 @@ const About = () => {
             <Swipe/>
           </CertifContainer>
         
-        <div style={{ background:'wheat', display:"flex",width:'100%',alignItems:"flex-start",margin:"50px 0",flexWrap:"wrap" , padding:"20px"
-          }} >
-          <span style={{fontFamily: "'Poppins', sans-serif",fontSize:"32px",flex:1}} >Find us here</span>
-          <span style={{flex:2}} >
-          <iframe style={{width:'100%'}}  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3070.1682714852623!2d66.98639657806524!3d39.69092037955662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1648129527771!5m2!1sen!2s"  height="450"   ></iframe>
-          </span>
-        </div>
+        
           <Footer/>
     </Container>
   )

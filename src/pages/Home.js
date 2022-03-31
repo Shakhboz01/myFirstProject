@@ -13,6 +13,7 @@ import {BsFillArrowUpCircleFill} from "react-icons/bs"
 import Fab from '@mui/material/Fab';
 import Chat from '../components/Chat';
 import 'animate.css';
+import WorksSample from '../components/worksSample';
 const Container=styled.div`
 width:100%;
 `
@@ -38,7 +39,7 @@ const Home = () => {
       </ContainImage>
       <SingleImg/>
       <PopProducts/>
-      
+      <WorksSample/>
       <Footer/> 
     </Container>
   )

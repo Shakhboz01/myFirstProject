@@ -9,9 +9,16 @@ import { useEffect } from 'react'
 import ElevateAppBar from './Navbar'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import FormControl from '@mui/material/FormControl';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
+
 import 'animate.css';
 const Container=styled.div`
-background:black
+background:black;
+width:100%;
+overflow:hidden;
 `
 const ImgContainer=styled.div`
 background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ), url(${prev=>prev.img});
@@ -47,18 +54,29 @@ const [value,setValue]=useState("");
 let path;
 useEffect(()=>{
   path=window.location.pathname.split("/")[1];
-  if(path===undefined){
-    setValue("home")
-  }
-  else{
+  
     setValue(path)
-  }
+  
 }
 ,[]);
+const [values, setValues] = React.useState({
+  amount: '',
+  password: '',
+  weight: '',
+  weightRange: '',
+  showPassword: false,
+});
+
+const handleChange = (prop) => (event) => {
+  setValues({ ...values, [prop]: event.target.value });
+};
+
 
   return (
     
       <Container>
+
+
 
 {MapLinks.filter(arg=>arg.title===value).map(item=>(
         <ImgContainer key={item.id} img={item.img} >

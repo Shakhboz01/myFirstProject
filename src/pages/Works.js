@@ -4,9 +4,13 @@ import Header from '../components/Header'
 import { BasicNavbar } from '../components/Header'
 import image3 from "../photos/Icon.jpg"
 import LinkHeader from '../components/LinkHeader'
+import { ourWorks } from '../Data/data'
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
+import {  Info,Title,Desc } from "../components/Service";
+import Footer from '../components/Footer'
 
 const Container=styled.div`
-background:black
 `
 const ImgContainer=styled.div`
 background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ), url(${image3});
@@ -29,7 +33,12 @@ const Works = () => {
   return (
     <Container>
        <LinkHeader/> 
-       <h1 style={{color:'white'}} >Works</h1>
+       <Info data-aos="fade-left" >
+            <Title>See real examples of products </Title>
+            <Desc><span>11 regions of Uzbekistan have already trust us  </span> <span style={{height:'3px', width:"20%",background:"#ffc107"}} ></span> </Desc>
+        </Info>
+      <ImageGallery items={ourWorks} />
+      <Footer/>
     </Container>
   )
 }

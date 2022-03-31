@@ -8,7 +8,7 @@ import { mobile } from './Responsive';
 const Container=styled.div`
 display:flex;
 padding:10px;
-background: linear-gradient(to right,#171510,#0d0b00) ;
+background: linear-gradient(to top,#072039,#051729) ;
 color:white;
 align-items:center;
 border-top-left-radius:100px;
@@ -42,7 +42,7 @@ ${mobile("500",{
 `
 const Title=styled.div`
 padding:7px;
-color:#ffc107;
+color:#0089fc;
 text-transform:capitalize;
 `
 const Right=styled.div`
@@ -67,43 +67,23 @@ font-size:large;
 transition:all 0.3s ease;
 &:hover{
 transform:scaleX(1.1);
-color:#ffc107;
+color:#0089fc;
 }
 `
 const SocialIcons=styled.div`
 display:flex;
 `
-const List=styled.div`
-display:flex;
-flex-wrap:wrap;
-align-items:center;
-flex-direction:column;
-justify-content:center;
-`
-
-const ListItem=styled.div`
-padding:3px 8px;
-cursor:pointer;
-
-&:hover{
-  color:#ffc107;
-}
-`
+ 
+ 
 const ContactItem=styled.div`
 padding:4px 8px;
 cursor:pointer;
 
 &:hover{
-  color:orange;
+  color:#0089fc;
 }
 `
-const Room=styled.div`
-`
-
-const Phone=styled.div`
-`
-const MailOutline=styled.div`
-`
+ 
 
 const Footer = () => {
   return (
@@ -134,15 +114,23 @@ const Footer = () => {
         <ContactItem>
             22 street
         </ContactItem>
-        <ContactItem>
+        <ContactItem  >
+          <a style={{color:"white"}} href='tel:222-33-22' >
           +99891 234 56 78
+          </a>
         </ContactItem>
         <ContactItem>
            contact@lama.dev
         </ContactItem>
 </Center>
       <Right>
-      <iframe style={{width:'100%',border:'none'}}  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3070.1682714852623!2d66.98639657806524!3d39.69092037955662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1648129527771!5m2!1sen!2s"  height="210"   ></iframe>
+      <Title>ADRESS:</Title>
+      <ContactItem>
+           Dehlaviy 2 21
+        </ContactItem>
+        <ContactItem>
+          Orientir: Dehlaviy 2 21
+        </ContactItem>
       </Right>
       
     </Container>

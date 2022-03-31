@@ -21,6 +21,7 @@ width:100%;
 padding:50px 0 35px 0;
 text-align:center;
 background:#f2f2f2;
+ 
 `
 // const OverButton=styled.div`
 // height:60px;

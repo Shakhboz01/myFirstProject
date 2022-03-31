@@ -4,9 +4,11 @@ import Header from '../components/Header'
 import { BasicNavbar } from '../components/Header'
 import image3 from "../photos/Icon.jpg"
 import LinkHeader from '../components/LinkHeader'
+import Footer from '../components/Footer'
+import NewsCard from '../components/NewsCard'
 
 const Container=styled.div`
-background:black
+background:#0a1929
 `
 const ImgContainer=styled.div`
 background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ), url(${image3});
@@ -29,8 +31,7 @@ const News = () => {
   return (
     <Container>
        <LinkHeader/> 
-       <h1>nEWS</h1>
-
+       <NewsCard/>
     </Container>
   )
 }

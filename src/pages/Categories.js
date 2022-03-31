@@ -7,7 +7,6 @@ import LinkHeader from '../components/LinkHeader'
 import Footer from '../components/Footer'
 import Categories from '../components/Categories'
 const Container=styled.div`
-background:black
 `
 const ImgContainer=styled.div`
 background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ), url(${image3});
