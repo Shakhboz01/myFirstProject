@@ -56,7 +56,7 @@ useEffect(()=>{
   path=window.location.pathname.split("/")[1];
   
     setValue(path)
-  
+  console.log("path ",path)
 }
 ,[]);
 const [values, setValues] = React.useState({
